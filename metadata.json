@@ -1,0 +1,6 @@
+{
+  "name": "Unmix the Signal — ICA Audio Source Separation",
+  "description": "Clean audio source separation from scratch using Independent Component Analysis (FastICA), manual PCA whitening, spectral noise reduction, and acoustic evaluation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

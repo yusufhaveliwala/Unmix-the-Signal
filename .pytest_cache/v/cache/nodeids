@@ -1,0 +1,9 @@
+[
+  "unmix-the-signal/tests/test_audio_pipeline.py::test_audio_pipeline_file_generation_and_playback",
+  "unmix-the-signal/tests/test_audio_pipeline.py::test_noise_reduction_attenuates_stationary_noise",
+  "unmix-the-signal/tests/test_ica.py::test_fastica_contrast_functions",
+  "unmix-the-signal/tests/test_ica.py::test_fastica_convergence_and_separation",
+  "unmix-the-signal/tests/test_whitening.py::test_pca_whitening_identity_covariance",
+  "unmix-the-signal/tests/test_whitening.py::test_pca_whitening_inversion",
+  "unmix-the-signal/tests/test_whitening.py::test_pca_whitening_singular_protection"
+]

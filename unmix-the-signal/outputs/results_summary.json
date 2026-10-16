@@ -1,0 +1,192 @@
+{
+  "status": "success",
+  "sample_rate": 22050,
+  "duration_sec": 6.0,
+  "n_samples": 132300,
+  "contrast_function": "tanh",
+  "mixing_matrix": [
+    [
+      0.75,
+      0.35
+    ],
+    [
+      0.4,
+      0.8
+    ]
+  ],
+  "mixing_condition_number": 2.8811809706695923,
+  "whitening": {
+    "frobenius_error": 4.444133668469925e-07,
+    "covariance_matrix": [
+      [
+        0.9999998807907104,
+        2.907589475853456e-07
+      ],
+      [
+        2.907589475853456e-07,
+        0.9999998807907104
+      ]
+    ],
+    "is_whitened": true
+  },
+  "ica": {
+    "converged": true,
+    "n_iterations": 5,
+    "execution_time_sec": 0.06861305236816406,
+    "convergence_history": [
+      0.7450778029309209,
+      0.4229498089471957,
+      0.08604342704038215,
+      0.0019574844664485003,
+      2.399598143298931e-06
+    ],
+    "unmixing_matrix_whitened": [
+      [
+        -0.4699639277602856,
+        0.8826856216140179
+      ],
+      [
+        0.8826856216140178,
+        0.4699639277602856
+      ]
+    ],
+    "total_unmixing_matrix": [
+      [
+        -12.596139715992862,
+        5.4797946964590345
+      ],
+      [
+        -3.890442978942194,
+        7.32191158258407
+      ]
+    ],
+    "estimated_mixing_matrix": [
+      [
+        -0.10325787077995396,
+        0.0772792632478019
+      ],
+      [
+        -0.05486529765695644,
+        0.17763811437083857
+      ]
+    ]
+  },
+  "evaluation": {
+    "mean_correlation": 0.9999919162563347,
+    "mean_sdr_db": 50.54116529150501,
+    "sources": [
+      {
+        "source_index": 1,
+        "assigned_component": 1,
+        "sign_flipped": true,
+        "pearson_correlation": 0.9999846530973494,
+        "absolute_correlation": 0.9999846530973494,
+        "sdr_db": 45.16109930978069
+      },
+      {
+        "source_index": 2,
+        "assigned_component": 2,
+        "sign_flipped": false,
+        "pearson_correlation": 0.9999991794153198,
+        "absolute_correlation": 0.9999991794153198,
+        "sdr_db": 55.921231273229324
+      }
+    ],
+    "permutation_order": [
+      0,
+      1
+    ]
+  },
+  "noise_reduction": {
+    "mixture_snr_improvement_db": 1.5,
+    "separated_tracks": [
+      {
+        "snr_before_db": 23.628093350857206,
+        "snr_after_db": -6.484027305276003,
+        "snr_improvement_db": 1.5,
+        "average_noise_floor_power": 7.396904375699283e-05,
+        "max_gain": 0.9966369097591832,
+        "min_gain": 0.08
+      },
+      {
+        "snr_before_db": 20.120410842652742,
+        "snr_after_db": 0.35133600093812695,
+        "snr_improvement_db": 1.5,
+        "average_noise_floor_power": 0.0006147510460604938,
+        "max_gain": 0.9986220390807594,
+        "min_gain": 0.08
+      }
+    ]
+  },
+  "snr_experiment": {
+    "snr_levels": [
+      30.0,
+      20.0,
+      15.0,
+      10.0,
+      5.0,
+      0.0
+    ],
+    "correlations": [
+      0.9983505920193637,
+      0.9840398533724095,
+      0.9531146792233225,
+      0.878744622036596,
+      0.7400899543899504,
+      0.5600323836981639
+    ],
+    "sdrs": [
+      25.355722773489635,
+      15.504334425497245,
+      10.838835661666671,
+      6.761780542036805,
+      3.595276335280995,
+      1.675479204814163
+    ]
+  },
+  "audio_files": {
+    "original_source_1.wav": {
+      "rel_path": "outputs/audio/original_source_1.wav",
+      "size_bytes": 264644
+    },
+    "original_source_2.wav": {
+      "rel_path": "outputs/audio/original_source_2.wav",
+      "size_bytes": 264644
+    },
+    "mixed_audio_1.wav": {
+      "rel_path": "outputs/audio/mixed_audio_1.wav",
+      "size_bytes": 264644
+    },
+    "mixed_audio_2.wav": {
+      "rel_path": "outputs/audio/mixed_audio_2.wav",
+      "size_bytes": 264644
+    },
+    "cleaned_mixture.wav": {
+      "rel_path": "outputs/audio/cleaned_mixture.wav",
+      "size_bytes": 264644
+    },
+    "separated_source_1.wav": {
+      "rel_path": "outputs/audio/separated_source_1.wav",
+      "size_bytes": 264644
+    },
+    "separated_source_2.wav": {
+      "rel_path": "outputs/audio/separated_source_2.wav",
+      "size_bytes": 264644
+    },
+    "cleaned_separated_source_1.wav": {
+      "rel_path": "outputs/audio/cleaned_separated_source_1.wav",
+      "size_bytes": 264644
+    },
+    "cleaned_separated_source_2.wav": {
+      "rel_path": "outputs/audio/cleaned_separated_source_2.wav",
+      "size_bytes": 264644
+    }
+  },
+  "plot_files": {
+    "waveforms": "outputs/plots/waveforms_comparison.png",
+    "scatter_pca_vs_ica": "outputs/plots/scatter_pca_vs_ica.png",
+    "spectrograms": "outputs/plots/spectrograms_comparison.png",
+    "convergence": "outputs/plots/convergence_curve.png",
+    "snr_vs_performance": "outputs/plots/snr_vs_performance.png"
+  }
+}
